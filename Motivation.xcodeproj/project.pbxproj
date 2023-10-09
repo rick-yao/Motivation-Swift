@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D7C02262AD399C3007989D4 /* MotivationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D7C02252AD399C3007989D4 /* MotivationView.h */; };
-		1D7C02282AD399C3007989D4 /* MotivationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C02272AD399C3007989D4 /* MotivationView.m */; };
+		1D7C02302AD399E3007989D4 /* Motivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C022F2AD399E3007989D4 /* Motivation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D7C02222AD399C3007989D4 /* Motivation.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Motivation.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D7C02252AD399C3007989D4 /* MotivationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotivationView.h; sourceTree = "<group>"; };
-		1D7C02272AD399C3007989D4 /* MotivationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotivationView.m; sourceTree = "<group>"; };
+		1D7C022E2AD399E3007989D4 /* Motivation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Motivation-Bridging-Header.h"; sourceTree = "<group>"; };
+		1D7C022F2AD399E3007989D4 /* Motivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motivation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +46,8 @@
 		1D7C02242AD399C3007989D4 /* Motivation */ = {
 			isa = PBXGroup;
 			children = (
-				1D7C02252AD399C3007989D4 /* MotivationView.h */,
-				1D7C02272AD399C3007989D4 /* MotivationView.m */,
+				1D7C022F2AD399E3007989D4 /* Motivation.swift */,
+				1D7C022E2AD399E3007989D4 /* Motivation-Bridging-Header.h */,
 			);
 			path = Motivation;
 			sourceTree = "<group>";
@@ -60,7 +59,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D7C02262AD399C3007989D4 /* MotivationView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +94,7 @@
 				TargetAttributes = {
 					1D7C02212AD399C3007989D4 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -132,7 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D7C02282AD399C3007989D4 /* MotivationView.m in Sources */,
+				1D7C02302AD399E3007989D4 /* Motivation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +256,7 @@
 		1D7C022C2AD399C3007989D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -269,6 +269,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rickyao.Motivation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Motivation/Motivation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -276,6 +279,7 @@
 		1D7C022D2AD399C3007989D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -288,6 +292,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rickyao.Motivation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Motivation/Motivation-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
